@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMI Calculator</title>
+    <script src="server.js"></script>
+</head>
+<body>
+
+    <h2>EMI Calculator Form</h2>
+    <form action="/submit" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="emi_amount">EMI Amount:</label><br>
+        <input type="number" id="emi_amount" name="emi_amount" required><br><br>
+
+        <label for="years">Years:</label><br>
+        <input type="number" id="years" name="years" required><br><br>
+
+        <label for="total_loan">Total Loan:</label><br>
+        <input type="number" id="total_loan" name="total_loan" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
